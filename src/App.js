@@ -1,6 +1,7 @@
 import "./styles/index.scss";
 import HeaderComponent from './components/HeaderComponent/HeaderComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
+import TornaSuBtn from "./components/TornaSuBtn/TornaSuBtn";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <section id="section-5" style={{ height: "500px", color: "black" }}>section 5</section>
       </div>
       <FooterComponent></FooterComponent>
+      <TornaSuBtn></TornaSuBtn>
 
     </div>
   );
