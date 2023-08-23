@@ -20,13 +20,17 @@ const NavBarComponent = ({ info }) => {
         });
     }, []);
 
+    const openMenu = (value) => {
+        if(window.scrollY === 0) setShowBackground(value);
+    }
+
     return (
         <div className="navBarComponent">
             <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4', 'section-5']} currentClassName="is-current" style={{backgroundColor:showBackground ? "#1c1c1d" : "transparent"}}>
-                <Navbar expand="lg" className="" >
-                    <Navbar.Toggle aria-controls="basic-navbar-nav p-0" className="custom-toggler"/>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                <Navbar expand="lg" className="" onToggle={(value) => openMenu(value)}>
+                    <Navbar.Toggle  aria-controls="basic-navbar-nav p-0" className="custom-toggler"/>
+                    <Navbar.Collapse id="basic-navbar-nav" >
+                        <Nav className="mx-3">
                             <Nav.Link href="#section-1">About</Nav.Link>
                             <Nav.Link href="#section-2">Skills</Nav.Link>
                             <Nav.Link href="#section-3">Experience</Nav.Link>
