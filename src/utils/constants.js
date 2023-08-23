@@ -1,7 +1,7 @@
-const LENGUAGE = {
-    ITALY: "IT",
-    ENGLISH: "EN",
-    SPANISH:"SP"
+const LANGUAGE = {
+    ITALY: "it",
+    ENGLISH: "en",
+    SPANISH:"es"
 };
 
-export default LENGUAGE;
+export default LANGUAGE;

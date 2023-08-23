@@ -6,7 +6,8 @@ import inglaterra from "../../assests/inglaterra.png"
 import espana from "../../assests/espana.png"
 import italia from "../../assests/italia.png"
 import { AppContext } from "../../contexts/appContext";
-import LENGUAGE from "../../utils/constants";
+import LANGUAGE from "../../utils/constants";
+import { useTranslation } from "react-i18next"
 
 /**
  * @function NavBarComponent
@@ -15,7 +16,7 @@ import LENGUAGE from "../../utils/constants";
 const NavBarComponent = ({ info }) => {
     const [showBackground, setShowBackground] = useState(false);
     const { lenguage, setLenguage} = useContext( AppContext );
-
+    const [tranlastion, i18n] = useTranslation("global")
     useEffect(() => {
         window.addEventListener("scroll", () => {
             console.log(window.scrollY);
@@ -38,15 +39,15 @@ const NavBarComponent = ({ info }) => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav p-0" className="custom-toggler" />
                     <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav className="mx-3">
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
-                                <Button onClick={() => setLenguage(LENGUAGE.ENGLISH)} variant="" className={`${lenguage === LENGUAGE.ENGLISH ? "active" : ''}  mx-1`}><Image src={inglaterra} height={20} width={25} /></Button>
-                                <Button onClick={() => setLenguage(LENGUAGE.SPANISH)} variant="" className={ `${lenguage === LENGUAGE.SPANISH ? "active" : ''}`}><Image src={espana} height={20} width={25} /></Button>
-                                <Button onClick={() => setLenguage(LENGUAGE.ITALY)} variant="" className={`${lenguage === LENGUAGE.ITALY ? "active" : ''}  mx-1`}><Image src={italia} height={20} width={25} /></Button>
+                            <NavDropdown title={tranlastion("header.language")} id="navbarScrollingDropdown">
+                                <Button onClick={() => i18n.changeLanguage(LANGUAGE.ENGLISH)} variant="" className={`${i18n.language === LANGUAGE.ENGLISH ? "active" : ''}  mx-1`}><Image src={inglaterra} height={20} width={25} /></Button>
+                                <Button onClick={() => i18n.changeLanguage(LANGUAGE.SPANISH)} variant="" className={ `${i18n.language === LANGUAGE.SPANISH ? "active" : ''}`}><Image src={espana} height={20} width={25} /></Button>
+                                <Button onClick={() => i18n.changeLanguage(LANGUAGE.ITALY)} variant="" className={`${i18n.language === LANGUAGE.ITALY ? "active" : ''}  mx-1`}><Image src={italia} height={20} width={25} /></Button>
                             </NavDropdown>
-                            <Nav.Link href="#section-1">About</Nav.Link>
-                            <Nav.Link href="#section-2">Skills</Nav.Link>
-                            <Nav.Link href="#section-3">Experience</Nav.Link>
-                            <Nav.Link href="#section-4">Portfolio</Nav.Link>
+                            <Nav.Link href="#section-1">{tranlastion("header.about")}</Nav.Link>
+                            <Nav.Link href="#section-2">{tranlastion("header.skills")}</Nav.Link>
+                            <Nav.Link href="#section-3">{tranlastion("header.experience")}</Nav.Link>
+                            <Nav.Link href="#section-4">{tranlastion("header.portfolio")}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
