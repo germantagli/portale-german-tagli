@@ -1,0 +1,52 @@
+.socials-block {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px auto;
+
+    @media only screen and (max-width: 1024px) {
+      position: relative;
+      right: 0;
+    }
+
+    .socials-wrapper {
+        display: inline-flex;
+        flex-direction: column;
+
+        .link-wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .link {
+                width: 36px;
+                height: 36px;
+                fill: rgb(255, 255, 255);
+                border-radius: 50%;
+                border: 1px solid rgb(255, 255, 255);
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                text-decoration: none;
+                margin: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 610px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            flex-flow: wrap;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin: 50px 0px 0px;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.HeaderComponent {
+    background: linear-gradient(rgba(28, 28, 29, 0), rgba(28, 28, 29, 0)), url("../../assests/fondo.jpg") center center / cover no-repeat;
+    padding: 0px 0px 80px;
+    flex-direction: column;
+    min-height: auto;
+    position: relative;
+    word-break: break-word;
+    padding: 80px 0px;
+    display: flex;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        height: 70%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding-top: 98px;
+        width: 95%;
+        max-width: 1400px;
+        margin: 0px auto;
+        box-sizing: border-box;
+        word-break: break-word;
+        padding: 80px 0px;
+        display: flex;
+        overflow: hidden;
+
+        @media only screen and (min-width: 1025px) {
+            max-width: 1000px;
+        }
+    }
+}
+
+.nome {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+
+    .nome1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-weight: 700;
+        font-size: 94.56px;
+        margin-bottom: 0.3em;
+        position: relative;
+        white-space: pre-line;
+
+
+        @media only screen and (max-width: 768px) {
+            font-size: 54.34px;
+        }
+    }
+
+    .nome2 {
+        color: rgb(109, 219, 154);
+        text-align: center;
+        font-weight: 400;
+        padding-top: 10px;
+        font-weight: 700;
+        font-size: 41.4px;
+        margin-bottom: 0.3em;
+        position: relative;
+        white-space: pre-line;
+
+
+        @media only screen and (max-width: 768px) {
+            font-size: 25.76px;
+        }
+    }
+}
