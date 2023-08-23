@@ -29,7 +29,7 @@ function TornaSuBtn() {
                 {showTopBtn &&
                     <>
                         <div id="tornaSuTooltip" className="iconStyle" onClick={goToTop}>
-                            <BsIcon.ChevronUp color={"rgb(73, 175, 115)"} width={32} height={32} />
+                            <BsIcon.ChevronUp color={"#ffffff"} width={32} height={32} />
                         </div>
                     </>}
             </div>
