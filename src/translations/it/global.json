@@ -4,6 +4,14 @@
         "skills":"Competenze",
         "experience": "Esperienza",
         "portfolio": "Portafoglio",
-        "language":"Lingua"
+        "language":"Lingua",
+        "contact":"Contatti"
+    },
+    "about": {
+        "yearsOld":"Anni",
+        "basedSeattle": "Con sede a Seattle",
+        "title":"Codifico, quindi sono.",
+        "infoOne":"Sono un giovane appassionato appassionato di informatica e tutto ciò che riguarda sin dai miei primi passi al liceo. Negli ultimi anni ho maturato molta esperienza in questo campo spinto dal forte desiderio di diventare un esperto. Oggi sono uno sviluppatore front-end senior presso una delle aziende leader nel mondo.",
+        "infoTwo":"“Per me, lo sviluppo web è più che codificare. È una tela con una pagina bianca e io sono l'artista che la dipinge con i colori della codifica”."
     }
 }

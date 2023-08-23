@@ -1,4 +1,4 @@
-import "./TestComponent.scss";
+import "./Skills.scss";
 import PropTypes from "prop-types";
 
 /**

@@ -19,7 +19,6 @@ const NavBarComponent = ({ info }) => {
     const [tranlastion, i18n] = useTranslation("global")
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            console.log(window.scrollY);
             if (window.scrollY === 0) {
                 setShowBackground(false);
             } else {
@@ -34,7 +33,7 @@ const NavBarComponent = ({ info }) => {
 
     return (
         <div className="navBarComponent">
-            <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4', 'section-5']} currentClassName="is-current" style={{ backgroundColor: showBackground ? "#1c1c1d" : "transparent" }}>
+            <Scrollspy items={['about', 'skills', 'experience', 'portfolio', 'contact']} currentClassName="is-current" style={{ backgroundColor: showBackground ? "#1c1c1d" : "transparent" }}>
                 <Navbar expand="lg" className="" onToggle={(value) => openMenu(value)}>
                     <Navbar.Toggle aria-controls="basic-navbar-nav p-0" className="custom-toggler" />
                     <Navbar.Collapse id="basic-navbar-nav" >
@@ -44,10 +43,11 @@ const NavBarComponent = ({ info }) => {
                                 <Button onClick={() => i18n.changeLanguage(LANGUAGE.SPANISH)} variant="" className={ `${i18n.language === LANGUAGE.SPANISH ? "active" : ''}`}><Image src={espana} height={20} width={25} /></Button>
                                 <Button onClick={() => i18n.changeLanguage(LANGUAGE.ITALY)} variant="" className={`${i18n.language === LANGUAGE.ITALY ? "active" : ''}  mx-1`}><Image src={italia} height={20} width={25} /></Button>
                             </NavDropdown>
-                            <Nav.Link href="#section-1">{tranlastion("header.about")}</Nav.Link>
-                            <Nav.Link href="#section-2">{tranlastion("header.skills")}</Nav.Link>
-                            <Nav.Link href="#section-3">{tranlastion("header.experience")}</Nav.Link>
-                            <Nav.Link href="#section-4">{tranlastion("header.portfolio")}</Nav.Link>
+                            <Nav.Link href="#about">{tranlastion("header.about")}</Nav.Link>
+                            <Nav.Link href="#skills">{tranlastion("header.skills")}</Nav.Link>
+                            <Nav.Link href="#experience">{tranlastion("header.experience")}</Nav.Link>
+                            <Nav.Link href="#portfolio">{tranlastion("header.portfolio")}</Nav.Link>
+                            <Nav.Link href="#contact">{tranlastion("header.contact")}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

@@ -1,12 +1,12 @@
-import "./TestComponent.scss";
+import "./Contacts.scss";
 import PropTypes from "prop-types";
 
 /**
- * @function TestComponent test components
+ * @function Contacts test components
  * @param info information that arrives procedurally provided
  * @returns {JSX.Element}
 */
-const TestComponent = ({ info }) => { 
+const Contacts = ({ info }) => { 
     return (
         <ul className="testList">
             <li className="testList__item">{info}</li>
@@ -16,12 +16,12 @@ const TestComponent = ({ info }) => {
     )
 };
 
-TestComponent.propTypes = {
+Contacts.propTypes = {
     info: PropTypes.string.isRequired,
 };
 
-TestComponent.defaultProps = {
+Contacts.defaultProps = {
     info: "",
 };
 
-export default TestComponent;
+export default Contacts;

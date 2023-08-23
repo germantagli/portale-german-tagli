@@ -4,6 +4,14 @@
         "skills":"Habilidades",
         "experience": "Experiencia",
         "portfolio": "Portafolio",
-        "language":"Idioma"
+        "language":"Idioma",
+        "contact":"Contacto"
+    },
+    "about": {
+        "yearsOld":"Anos",
+        "basedSeattle": "Con sede en Seattle",
+        "title":"Codifico, luego existo.",
+        "infoOne":"Soy un joven entusiasta al que le apasionan las tecnologías de la información y todo lo relacionado con ellas desde mis primeros pasos en la escuela secundaria. Durante los últimos años adquirí mucha experiencia en este campo debido al fuerte deseo de convertirme en un experto. Hoy soy desarrollador front-end senior en una de las empresas líderes del mundo.",
+        "infoTwo":"“Para mí, el desarrollo web es más que codificar. Es un lienzo con una página en blanco y yo soy el artista para pintarlo con colores de codificación”."
     }
 }

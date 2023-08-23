@@ -4,6 +4,14 @@
         "skills":"Skills",
         "experience": "Experience",
         "portfolio": "Portfolio",
-        "language":"Language"
+        "language":"Language",
+        "contact":"Contact"
+    },
+    "about": {
+        "yearsOld":"Years Old",
+        "basedSeattle": "Based in Seattle",
+        "title":"I code, therefore I am.",
+        "infoOne":"I am a young enthusiast who is keen on IT and anything about it since my first steps to High School. During the past few years, I gained lots of experience in this field due to the strong desire of becoming an expert. Today I am a senior front-end developer at one of the leading companies in the world. ",
+        "infoTwo":"“For me, web development is more than coding. It's a canvas with a blank page and I am the artist to paint it with colors of coding”."
     }
 }

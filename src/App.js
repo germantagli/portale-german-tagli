@@ -8,6 +8,11 @@ import i18next from "i18next";
 import global_es from "./translations/es/global.json"
 import global_en from "./translations/en/global.json"
 import global_it from "./translations/it/global.json"
+import About from "./pages/About/About";
+import Skills from "./pages/Skills/Skills";
+import Experince from "./pages/Experince/Experince";
+import Portafolio from "./pages/Portafolio/Portafolio";
+import Contacts from "./pages/Contacts/Contacts";
 
 
 i18next.init({
@@ -31,13 +36,13 @@ function App() {
     <div className="App">
       <I18nextProvider i18n={i18next}>
         <AppContextProvider>
-          <HeaderComponent info="azasd"></HeaderComponent>
+          <HeaderComponent></HeaderComponent>
           <div>
-            <section id="section-1" style={{ height: "500px", color: "black" }}>section 1</section>
-            <section id="section-2" style={{ height: "500px", color: "black" }}>section 2</section>
-            <section id="section-3" style={{ height: "500px", color: "black" }}>section 3</section>
-            <section id="section-4" style={{ height: "500px", color: "black" }}>section 4</section>
-            <section id="section-5" style={{ height: "500px", color: "black" }}>section 5</section>
+            <section id="about" style={{ minHeight: "300px" }}><About></About></section>
+            <section id="skills" style={{ minHeight: "500px"}}><Skills></Skills></section>
+            <section id="experience" style={{ minHeight: "500px"}}><Experince></Experince></section>
+            <section id="portfolio" style={{ minHeight: "500px" }}><Portafolio></Portafolio></section>
+            <section id="contact" style={{ minHeight: "500px" }}><Contacts></Contacts></section>
           </div>
           <FooterComponent></FooterComponent>
           <TornaSuBtn></TornaSuBtn>
