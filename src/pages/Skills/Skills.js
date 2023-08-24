@@ -42,7 +42,7 @@ const Skills = () => {
                     {SKILLS_LIST(tranlastion).map(item => {
                         const { title, description, href, linkDescription, icon } = item
                         return (
-                            <Col xs="12" sm="4" md="4">
+                            <Col xs="12" sm="12" md="4">
                                 <div class="cardSkills">
                                     <div class="circle">
                                         <div color="#FFFFFF" data-name="icon-match-complexity-3">{icon}</div>

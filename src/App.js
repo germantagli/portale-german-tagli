@@ -40,11 +40,11 @@ function App() {
           <HeaderComponent></HeaderComponent>
           <div>
             <section id="about" style={{ minHeight: "300px" }}><About></About></section>
-            <section id="skills" style={{ minHeight: "500px"}}><Skills></Skills></section>
-            <section id="programSkills" style={{ minHeight: "500px" }}><ProgramsSkills></ProgramsSkills></section>
-            <section id="experience" style={{ minHeight: "500px"}}><Experince></Experince></section>
-            <section id="portfolio" style={{ minHeight: "500px" }}><Portafolio></Portafolio></section>
-            <section id="contact" style={{ minHeight: "500px" }}><Contacts></Contacts></section>
+            <section id="skills" style={{ minHeight: "300px"}}><Skills></Skills></section>
+            <section id="programSkills" style={{ minHeight: "300px" }}><ProgramsSkills></ProgramsSkills></section>
+            <section id="experience" style={{ minHeight: "300px"}}><Experince></Experince></section>
+            <section id="portfolio" style={{ minHeight: "300px" }}><Portafolio></Portafolio></section>
+            <section id="contact" style={{ minHeight: "300px" }}><Contacts></Contacts></section>
           </div>
           <FooterComponent></FooterComponent>
           <TornaSuBtn></TornaSuBtn>

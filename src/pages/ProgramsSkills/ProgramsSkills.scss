@@ -1,9 +1,42 @@
-.testList {
-    .testList__item {
-        color: black;
+.ProgramsSkills {
+    background: rgb(243, 248, 255);
+    word-break: break-word;
+    padding: 80px 0px;
+    display: flex;
+    overflow: hidden;
+
+    .title {
+        font-weight: 700;
+        font-size: 41.4px;
+        color: rgb(28, 28, 29);
+        text-align: left;
+        margin-bottom: 0px;
     }
 
-    .testList__item--colorRed {
-        color: red;
+    .description {
+        font-weight: 400;
+        font-size: 17.76px;
+        color: rgb(28, 28, 29);
+        text-align: left;
+        line-height: 1.6;
+        margin-top: 20px;
+    }
+
+    .titleSkill {
+        color: rgb(73, 175, 115);
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .descriptionSkill {
+        color: rgb(28, 28, 29);
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
     }
 }
