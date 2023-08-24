@@ -2,7 +2,7 @@
     "header": {
         "about": "About",
         "skills":"Skills",
-        "experience": "Experience",
+        "experience": "Experince",
         "portfolio": "Portfolio",
         "language":"Language",
         "contact":"Contact"
@@ -13,5 +13,14 @@
         "title":"I code, therefore I am.",
         "infoOne":"I am a young enthusiast who is keen on IT and anything about it since my first steps to High School. During the past few years, I gained lots of experience in this field due to the strong desire of becoming an expert. Today I am a senior front-end developer at one of the leading companies in the world. ",
         "infoTwo":"“For me, web development is more than coding. It's a canvas with a blank page and I am the artist to paint it with colors of coding”."
-    }
+    },
+    "skills":{
+        "skills":"Skills",
+        "experince": "Experince",
+        "portfolio": "Portfolio",
+        "descriptionSkills":"Learn about my skills in programming, find info on my language knowledge and more.",
+        "descriptionExperience":"Get to know the timeline of my education and  find out  more about  my working experience.",
+        "descriptionPortfolio":"My portfolio is my biggest  pride. Check my previous works and get to know my skills  better.",
+        "linkMore":"Learn more"
+    } 
 }

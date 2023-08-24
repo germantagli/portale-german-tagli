@@ -33,7 +33,7 @@ const NavBarComponent = ({ info }) => {
 
     return (
         <div className="navBarComponent">
-            <Scrollspy items={['about', 'skills', 'experience', 'portfolio', 'contact']} currentClassName="is-current" style={{ backgroundColor: showBackground ? "#1c1c1d" : "transparent" }}>
+            <Scrollspy items={['about', 'skills', 'experience', 'portfolio', 'contact', 'programSkills']} currentClassName="is-current" style={{ backgroundColor: showBackground ? "#1c1c1d" : "transparent" }}>
                 <Navbar expand="lg" className="" onToggle={(value) => openMenu(value)}>
                     <Navbar.Toggle aria-controls="basic-navbar-nav p-0" className="custom-toggler" />
                     <Navbar.Collapse id="basic-navbar-nav" >

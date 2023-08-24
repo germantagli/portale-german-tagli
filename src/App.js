@@ -13,6 +13,7 @@ import Skills from "./pages/Skills/Skills";
 import Experince from "./pages/Experince/Experince";
 import Portafolio from "./pages/Portafolio/Portafolio";
 import Contacts from "./pages/Contacts/Contacts";
+import ProgramsSkills from "./pages/ProgramsSkills/ProgramsSkills";
 
 
 i18next.init({
@@ -40,6 +41,7 @@ function App() {
           <div>
             <section id="about" style={{ minHeight: "300px" }}><About></About></section>
             <section id="skills" style={{ minHeight: "500px"}}><Skills></Skills></section>
+            <section id="programSkills" style={{ minHeight: "500px" }}><ProgramsSkills></ProgramsSkills></section>
             <section id="experience" style={{ minHeight: "500px"}}><Experince></Experince></section>
             <section id="portfolio" style={{ minHeight: "500px" }}><Portafolio></Portafolio></section>
             <section id="contact" style={{ minHeight: "500px" }}><Contacts></Contacts></section>

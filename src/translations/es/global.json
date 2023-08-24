@@ -13,5 +13,14 @@
         "title":"Codifico, luego existo.",
         "infoOne":"Soy un joven entusiasta al que le apasionan las tecnologías de la información y todo lo relacionado con ellas desde mis primeros pasos en la escuela secundaria. Durante los últimos años adquirí mucha experiencia en este campo debido al fuerte deseo de convertirme en un experto. Hoy soy desarrollador front-end senior en una de las empresas líderes del mundo.",
         "infoTwo":"“Para mí, el desarrollo web es más que codificar. Es un lienzo con una página en blanco y yo soy el artista para pintarlo con colores de codificación”."
-    }
+    },
+    "skills":{
+        "skills":"Habilidades",
+        "experince": "Experiencia",
+        "portfolio": "Portafolio",
+        "descriptionSkills":"Conozca mis habilidades en programación, encuentre información sobre mis conocimientos de idiomas y más.",
+        "descriptionExperience":"Conozca el cronograma de mi educación y descubra más sobre mi experiencia laboral.",
+        "descriptionPortfolio":"Mi cartera es mi mayor orgullo. Consulta mis trabajos anteriores y conoce mejor mis habilidades.",
+        "linkMore":"Conocer más"
+    } 
 }
