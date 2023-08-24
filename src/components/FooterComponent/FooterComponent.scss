@@ -1,9 +1,25 @@
-.testList {
-    .testList__item {
-        color: black;
+.FooterComponent {
+    word-break: break-word;
+    padding: 50px 0px;
+    background-color: rgb(28, 28, 29);
+    width: 100%;
+.wrapLinks {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    a {
+        display: inline-block;
+        position: relative;
+        color: white;
+        margin-right: 10px;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.6!important;
+        }
+        
     }
-
-    .testList__item--colorRed {
-        color: red;
-    }
+}
 }
