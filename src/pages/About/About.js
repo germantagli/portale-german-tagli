@@ -13,12 +13,12 @@ const About = () => {
         <div className="About">
             <Container>
                 <Row className="justify-content-center text-center">
-                    <Col xs="12" sm="4" md="4" className="mx-5">
+                    <Col xs="12" sm="12" md="4" className="mx-5">
                         <h1 className="title">{tranlastion("about.title")}</h1>
                         <p>{tranlastion("about.infoOne")}</p>
                         <p>{tranlastion("about.infoTwo")}</p>
                     </Col>
-                    <Col xs="12" sm="4" md="4" className="mx-5">
+                    <Col xs="12" sm="12" md="4" className="mx-md-5">
                        <p className="based">{tranlastion("about.basedSeattle")} </p>
                        <div className="year mb-4">{Number(new Date().getFullYear()) - 1991} {tranlastion("about.yearsOld")} </div>
                        <Image src={german} roundedCircle width={295} height={295}/>
