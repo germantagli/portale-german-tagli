@@ -8,10 +8,10 @@ import html from "../../assests/html.png"
 import sass from "../../assests/sass.png"
 import vue from "../../assests/vue2.svg"
 import ionic from "../../assests/ionic.png"
+import { useTranslation } from "react-i18next";
 
 /**
- * @function ProgramsSkills test components
- * @param info information that arrives procedurally provided
+ * @function ProgramsSkills ProgramsSkills components
  * @returns {JSX.Element}
 */
 const SKILLS = [
@@ -46,14 +46,15 @@ const SKILLS = [
         imagen: ionic
     }
 ]
-const ProgramsSkills = ({ info }) => {
+const ProgramsSkills = () => {
+    const [tranlastion] = useTranslation("global")
     return (
         <div className="ProgramsSkills">
             <Container>
                 <Row className="justify-content-center text-center">
                     <Col xs="12" sm="12" md="8" className="align-self-center">
-                        <h1 className="title">Programming skills</h1>
-                        <p className="description">Front end engineer believing in the power of web development. Experienced in all stages of advanced front end development. Focused on single-page application development, CSS/JS animations, semantics, accessibility, and progressive enhancement. However, I'm keen on exploring new languages and I always try to stay up-to-minute. Apart from these, I have other computer skills, such as I fluently use Adobe XD and Sketch for designing the websites before coding them. I also have basic knowledge in 3D Max Studio and Adobe After Effect and I use them as a hobby. </p>
+                        <h1 className="title">{tranlastion("programsSkills.title")}</h1>
+                        <p className="description">{tranlastion("programsSkills.description")} </p>
                     </Col>
                     <Col xs="12" sm="12" md="4" >
                         <Row className="justify-content-center text-center">

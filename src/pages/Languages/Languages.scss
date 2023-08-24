@@ -1,0 +1,43 @@
+.Languages {
+    background: linear-gradient(rgba(28, 28, 29, 0.8), rgba(28, 28, 29, 0.8)), url("../../assests/fondo3.jpg") center center / cover no-repeat;
+    flex-direction: column;
+    word-break: break-word;
+    padding: 80px 0px;
+    display: flex;
+    overflow: hidden;
+
+    .title {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 100%;
+        max-width: 700px;
+        margin: 0px auto 50px;
+        box-sizing: border-box;
+        font-weight: 700;
+        font-size: 41.4px;
+    }
+
+    .lingua {
+        color: rgb(109, 219, 154);
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 19.76px;
+    
+    }
+
+    .description {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 13.88px;
+        line-height: 1.4;
+        padding-top: 10px;
+    }
+
+    img{
+        width: 100px;
+        height: 70px;
+    }
+}

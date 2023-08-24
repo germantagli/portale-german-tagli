@@ -22,5 +22,18 @@
         "descriptionExperience":"Get to know the timeline of my education and  find out  more about  my working experience.",
         "descriptionPortfolio":"My portfolio is my biggest  pride. Check my previous works and get to know my skills  better.",
         "linkMore":"Learn more"
-    } 
+    },
+    "programsSkills":{
+        "title":"Programming skills",
+        "description":"Front end engineer believing in the power of web development. Experienced in all stages of advanced front end development. Focused on single-page application development, CSS/JS animations, semantics, accessibility, and progressive enhancement. However, I'm keen on exploring new languages and I always try to stay up-to-minute. Apart from these, I have other computer skills, such as I fluently use Adobe XD and Sketch for designing the websites before coding them. I also have basic knowledge in 3D Max Studio and Adobe After Effect and I use them as a hobby."
+    },
+    "Languages":{
+        "title":"Languages",
+        "spanish":"Spanish",
+        "italian":"Italian",
+        "english":"English",
+        "native":"Native",
+        "fluent":"Fluent",
+        "intermediate":"Intermediate"
+    }
 }
