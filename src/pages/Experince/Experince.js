@@ -35,7 +35,7 @@ const Experince = () => {
                                     {tranlastion("experience.laSalle")}
                                 </a>
                             </div>
-                            <div className="mb-5">
+                            <div className="mb-3 mb-lg-5">
                                 <span className="certificate">{tranlastion("experience.certificate")}</span>
                                 {/* <BsIcon.InfoCircle onClick={() => setOpenModalTecnico(true)} color={"#6ddb9a"} width={24} height={24} /> */}
                             </div>
@@ -48,7 +48,7 @@ const Experince = () => {
                                     {tranlastion("experience.udo")}
                                 </a>
                             </div>
-                            <div className="mb-5">
+                            <div className="mb-3 mb-lg-5">
                                 <span className="certificate"> {tranlastion("experience.degreeCertificate")}</span>
                                 {/* <BsIcon.InfoCircle onClick={() => setOpenModalDegree(true)} color={"#6ddb9a"} width={24} height={24} /> */}
                             </div>
@@ -68,7 +68,7 @@ const Experince = () => {
                                     {tranlastion("experience.ags")}
                                 </a>
                             </div>
-                            <div className="mb-5">{tranlastion("experience.seniorDeveloper")}</div>
+                            <div className="mb-3 mb-lg-5">{tranlastion("experience.seniorDeveloper")}</div>
 
                             <div>2019-2022</div>
                             <div>
@@ -76,7 +76,7 @@ const Experince = () => {
                                     {tranlastion("experience.dst")}
                                 </a>
                             </div>
-                            <div className="mb-5">{tranlastion("experience.middleDeveloper")}</div>
+                            <div className="mb-3 mb-lg-5">{tranlastion("experience.middleDeveloper")}</div>
 
                             <div>2018-2019</div>
                             <div>
@@ -84,7 +84,7 @@ const Experince = () => {
                                     {tranlastion("experience.lutech")}
                                 </a>
                             </div>
-                            <div className="mb-5">{tranlastion("experience.juniorDeveloper")}</div>
+                            <div className="mb-3 mb-lg-5">{tranlastion("experience.juniorDeveloper")}</div>
 
                             <div>2017-2018</div>
                             <div>
@@ -92,7 +92,7 @@ const Experince = () => {
                                     {tranlastion("experience.fabaris")}
                                 </a>
                             </div>
-                            <div className="mb-5">{tranlastion("experience.juniorDeveloper")}</div>
+                            <div className="mb-3 mb-lg-5">{tranlastion("experience.juniorDeveloper")}</div>
                         </p>
                     </Col>
                     <Col xs={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }} className="align-self-center">
