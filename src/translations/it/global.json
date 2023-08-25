@@ -9,7 +9,7 @@
     },
     "about": {
         "yearsOld":"Anni",
-        "basedSeattle": "Con sede a Seattle",
+        "basedSeattle": "Con sede a Rome",
         "title":"Codifico, quindi sono.",
         "infoOne":"Sono un giovane appassionato appassionato di informatica e tutto ciò che riguarda sin dai miei primi passi al liceo. Negli ultimi anni ho maturato molta esperienza in questo campo spinto dal forte desiderio di diventare un esperto. Oggi sono uno sviluppatore front-end senior presso una delle aziende leader nel mondo.",
         "infoTwo":"“Per me, lo sviluppo web è più che codificare. È una tela con una pagina bianca e io sono l'artista che la dipinge con i colori della codifica”."
@@ -22,5 +22,47 @@
         "descriptionExperience":"Conosci la cronologia della mia formazione e scopri di più sulla mia esperienza lavorativa.",
         "descriptionPortfolio":"Il mio portfolio è il mio più grande orgoglio. Controlla i miei lavori precedenti e conosci meglio le mie capacità.",
         "linkMore":"Saperne di più"
-    } 
+    },
+
+    
+    "programsSkills": {
+        "title": "Abilità di programmazione",
+        "description": "Ingegnere front-end che crede nella potenza dello sviluppo web. Esperienza in tutte le fasi dello sviluppo front-end avanzato. Incentrato sullo sviluppo di applicazioni a pagina singola, animazioni CSS/JS, semantica, accessibilità e miglioramento progressivo. Tuttavia, mi piace esplorare nuove lingue e cerco sempre di rimanere aggiornato. "
+    },
+    "Languages": {
+        "title": "Le lingue",
+        "spanish": "Spagnolo",
+        "italian": "Italiano",
+        "english": "Inglese",
+        "native": "Nativo",
+        "fluent": "Fluente",
+        "intermediate": "Intermedio"
+    },
+    "contacts": {
+        "contacMe": "Contattami",
+        "pleaseContact": "Contattami tramite questo modulo e ti risponderò entro 24 ore.",
+        "OrCallMeAt": "Oppure chiamami al",
+        "FindMeOn": "Trovami su",
+        "name": "Nome",
+        "email": "Email",
+        "message": "Scrivi qui il tuo messaggio",
+        "send": "Inviare"
+    },
+    "experience": {
+        "title": "Esperienza",
+        "description": "Conosci la cronologia della mia esperienza lavorativa dal passato al presente",
+        "education":"Formazione scolastica",
+        "laSalle":"Fondazione La Salle di Scienze Naturali",
+        "certificate":"Tecnico intermedio in agricolturae",
+        "udo":"Università dell'Est Venezuela - UDO",
+        "degreeCertificate":"Laurea in informatica",
+        "workExperience":"Esperienza di lavoro",
+        "ags":"AGS S.p.A.",
+        "seniorDeveloper":"Senior front-end developer",
+        "middleDeveloper":"Middle front-end developer",
+        "juniorDeveloper":"Junior front-end developer",
+        "dst":"Dst - Design Strategy Technology",
+        "lutech":"Lutech",
+        "fabaris":"Fabaris S.p.A."
+    }
 }

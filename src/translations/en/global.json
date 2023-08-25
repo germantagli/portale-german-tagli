@@ -1,39 +1,66 @@
 {
     "header": {
         "about": "About",
-        "skills":"Skills",
+        "skills": "Skills",
         "experience": "Experince",
         "portfolio": "Portfolio",
-        "language":"Language",
-        "contact":"Contact"
+        "language": "Language",
+        "contact": "Contact"
     },
     "about": {
-        "yearsOld":"Years Old",
-        "basedSeattle": "Based in Seattle",
-        "title":"I code, therefore I am.",
-        "infoOne":"I am a young enthusiast who is keen on IT and anything about it since my first steps to High School. During the past few years, I gained lots of experience in this field due to the strong desire of becoming an expert. Today I am a senior front-end developer at one of the leading companies in the world. ",
-        "infoTwo":"“For me, web development is more than coding. It's a canvas with a blank page and I am the artist to paint it with colors of coding”."
+        "yearsOld": "Years Old",
+        "basedSeattle": "Based in Rome",
+        "title": "I code, therefore I am.",
+        "infoOne": "I am a young enthusiast who is keen on IT and anything about it since my first steps to High School. During the past few years, I gained lots of experience in this field due to the strong desire of becoming an expert. Today I am a senior front-end developer at one of the leading companies in the world. ",
+        "infoTwo": "“For me, web development is more than coding. It's a canvas with a blank page and I am the artist to paint it with colors of coding”."
     },
-    "skills":{
-        "skills":"Skills",
+    "skills": {
+        "skills": "Skills",
         "experince": "Experince",
         "portfolio": "Portfolio",
-        "descriptionSkills":"Learn about my skills in programming, find info on my language knowledge and more.",
-        "descriptionExperience":"Get to know the timeline of my education and  find out  more about  my working experience.",
-        "descriptionPortfolio":"My portfolio is my biggest  pride. Check my previous works and get to know my skills  better.",
-        "linkMore":"Learn more"
+        "descriptionSkills": "Learn about my skills in programming, find info on my language knowledge and more.",
+        "descriptionExperience": "Get to know the timeline of my education and  find out  more about  my working experience.",
+        "descriptionPortfolio": "My portfolio is my biggest  pride. Check my previous works and get to know my skills  better.",
+        "linkMore": "Learn more"
     },
-    "programsSkills":{
-        "title":"Programming skills",
-        "description":"Front end engineer believing in the power of web development. Experienced in all stages of advanced front end development. Focused on single-page application development, CSS/JS animations, semantics, accessibility, and progressive enhancement. However, I'm keen on exploring new languages and I always try to stay up-to-minute. Apart from these, I have other computer skills, such as I fluently use Adobe XD and Sketch for designing the websites before coding them. I also have basic knowledge in 3D Max Studio and Adobe After Effect and I use them as a hobby."
+    "programsSkills": {
+        "title": "Programming skills",
+        "description": "Front end engineer believing in the power of web development. Experienced in all stages of advanced front end development. Focused on single-page application development, CSS/JS animations, semantics, accessibility, and progressive enhancement. However, I'm keen on exploring new languages and I always try to stay up-to-minute. "
     },
-    "Languages":{
-        "title":"Languages",
-        "spanish":"Spanish",
-        "italian":"Italian",
-        "english":"English",
-        "native":"Native",
-        "fluent":"Fluent",
-        "intermediate":"Intermediate"
+    "Languages": {
+        "title": "Languages",
+        "spanish": "Spanish",
+        "italian": "Italian",
+        "english": "English",
+        "native": "Native",
+        "fluent": "Fluent",
+        "intermediate": "Intermediate"
+    },
+    "contacts": {
+        "contacMe": "Contact me",
+        "pleaseContact": "Please contact me via this form and I will reply back within 24 hours.",
+        "OrCallMeAt": "Or call me at",
+        "FindMeOn": "Find me on",
+        "name": "Name",
+        "email": "Email address",
+        "message": "Type your message here",
+        "send": "Send"
+    },
+    "experience": {
+        "title": "Experience",
+        "description": "To know the timeline of my working experience from past to present",
+        "education":"Education",
+        "laSalle":"La Salle Foundation of Natural Sciences",
+        "certificate":"Middle Technician in Agriculture",
+        "udo":"University of the East Venezuela - UDO",
+        "degreeCertificate":"Degree in computer science",
+        "workExperience":"Work Experience",
+        "ags":"AGS S.p.A.",
+        "seniorDeveloper":"Senior front-end developer",
+        "middleDeveloper":"Middle front-end developer",
+        "juniorDeveloper":"Junior front-end developer",
+        "dst":"Dst - Design Strategy Technology",
+        "lutech":"Lutech",
+        "fabaris":"Fabaris S.p.A."
     }
 }

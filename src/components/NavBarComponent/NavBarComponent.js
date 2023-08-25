@@ -46,7 +46,7 @@ const NavBarComponent = ({ info }) => {
                             <Nav.Link href="#about">{tranlastion("header.about")}</Nav.Link>
                             <Nav.Link href="#skills">{tranlastion("header.skills")}</Nav.Link>
                             <Nav.Link href="#experience">{tranlastion("header.experience")}</Nav.Link>
-                            <Nav.Link href="#portfolio">{tranlastion("header.portfolio")}</Nav.Link>
+                            {/* <Nav.Link href="#portfolio">{tranlastion("header.portfolio")}</Nav.Link> */}
                             <Nav.Link href="#contact">{tranlastion("header.contact")}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
