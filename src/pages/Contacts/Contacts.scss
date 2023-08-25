@@ -1,9 +1,106 @@
-.testList {
-    .testList__item {
-        color: black;
+.Contacts {
+    word-break: break-word;
+    width: 100%;
+    padding: 80px 0px;
+    background: rgb(243, 248, 255);
+
+    Button {
+        max-width: 300px;
+        border: none;
+        border-radius: 50px;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(-180deg, rgb(109, 219, 154) 0%, rgb(73, 175, 115) 96%) no-repeat;
+        box-shadow: rgba(73, 175, 115, 0.5) 0px 4px 10px 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 50px;
+        line-height: 50px;
+        box-sizing: border-box;
+        text-decoration: none;
+        padding: 0px 40px;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        word-break: initial;
+        outline: none;
     }
 
-    .testList__item--colorRed {
-        color: red;
+    a {
+        text-decoration: none;
+    }
+
+    .findMe {
+        font-weight: 400;
+        font-size: 17.76px;
+        line-height: 1.4;
+        color: rgb(28, 28, 29);
+        font-weight: 300;
+        width: 100%;
+    }
+    
+
+    .title {
+        color: rgb(28, 28, 29);
+        margin-bottom: 30px;
+        text-align: left;
+        width: 100%;
+        font-weight: 700;
+        font-size: 31.52px;
+    }
+
+    .description {
+        color: rgb(28, 28, 29);
+        text-align: left;
+        width: 100%;
+        font-weight: 400;
+        font-size: 13.88px;
+        line-height: 1.4;
+    }
+
+    .socialCard {
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto 0px 0px;
+        max-width: 250px;
+
+        .wrapSocial {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+            transform: translateX(-12px);
+            margin: 10px 0px 0px;
+
+            .link-wrapper {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .link {
+                    width: 26px;
+                    height: 26px;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    text-decoration: none;
+                    margin: 5px;
+                    color: rgb(73, 175, 115);
+                    svg {
+                        pointer-events: none;
+                        width: 100%;
+                        height: 100%;
+                        max-width: 1.2rem;
+                        max-height: 1.2rem;
+                        fill: rgb(73, 175, 115);
+                    }
+                }
+            }
+        }
     }
 }
