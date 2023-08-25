@@ -45,7 +45,7 @@ function App() {
             <section id="programSkills" style={{ minHeight: "300px" }}><ProgramsSkills></ProgramsSkills></section>
             <section id="languages" style={{ minHeight: "300px" }}><Languages></Languages></section>
             <section id="experience" style={{ minHeight: "300px"}}><Experince></Experince></section>
-            <section id="portfolio" style={{ minHeight: "300px" }}><Portafolio></Portafolio></section>
+            <section id="portfolio"><Portafolio></Portafolio></section>
             <section id="contact" style={{ minHeight: "300px" }}><Contacts></Contacts></section>
           </div>
           <FooterComponent></FooterComponent>
