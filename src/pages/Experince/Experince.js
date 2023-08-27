@@ -1,8 +1,9 @@
 import { Col, Container, Row, Image } from "react-bootstrap";
 import "./Experince.scss";
 import PropTypes from "prop-types";
-import education from "../../assests/education6.jpg"
-import work from "../../assests/education7.jpg"
+import degreeCertificate from "../../assests/tituloDegree.jpg"
+import work from "../../assests/education6.jpg"
+import education from "../../assests/education7.jpg"
 import { useTranslation } from "react-i18next";
 import * as BsIcon from "react-bootstrap-icons";
 import { useState } from "react";
@@ -50,7 +51,7 @@ const Experince = () => {
                             </div>
                             <div className="mb-3 mb-lg-5">
                                 <span className="certificate"> {tranlastion("experience.degreeCertificate")}</span>
-                                {/* <BsIcon.InfoCircle onClick={() => setOpenModalDegree(true)} color={"#6ddb9a"} width={24} height={24} /> */}
+                                <BsIcon.InfoCircle onClick={() => setOpenModalDegree(true)} color={"#6ddb9a"} width={24} height={24} />
                             </div>
 
                         </p>
@@ -102,14 +103,14 @@ const Experince = () => {
             </Container>
             <ModalComponent
                 title={tranlastion("experience.certificate")}
-                content={education}
+                content={degreeCertificate}
                 show={opeModalTecnico}
                 onHide={() => setOpenModalTecnico(false)}>
             </ModalComponent>
 
             <ModalComponent
                 title={tranlastion("experience.degreeCertificate")}
-                content={education}
+                content={degreeCertificate}
                 show={opeModalDegree}
                 onHide={() => setOpenModalDegree(false)}>
             </ModalComponent>

@@ -20,9 +20,11 @@ const ModalComponent = (props) => {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body className="text-center">
-            <Image src={props.content} />
+            <Image src={props.content} width={"100%"}/>
             </Modal.Body>
         </Modal>
+
+        
     )
 };
 
