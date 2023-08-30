@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TODO: dobbiamo sostituire  http://www.germantagli.com per il Dominio dove sara pubblicato il sito. -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://www.germantagli.com</loc>
+        <lastmod>2023-08-30</lastmod>
+    </url>
+    <url>
+        <loc>http://www.germantagli.com/#about</loc>
+        <lastmod>2023-08-30</lastmod>
+    </url>
+        <url>
+        <loc>http://www.germantagli.com/#skills</loc>
+        <lastmod>2023-08-30</lastmod>
+    </url>
+        <url>
+        <loc>http://www.germantagli.com/#experiences</loc>
+        <lastmod>2023-08-30</lastmod>
+    </url>
+    <url>
+        <loc>http://www.germantagli.com/#contact</loc>
+        <lastmod>2023-08-30</lastmod>
+    </url>
+</urlset>

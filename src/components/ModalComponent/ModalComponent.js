@@ -6,7 +6,6 @@ import { propTypes } from "react-bootstrap/esm/Image";
  * @returns {JSX.Element}
 */
 const ModalComponent = (props) => {
-    console.log("zdfdfadf", props);
     return (
         <Modal
             {...props}

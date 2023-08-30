@@ -1,4 +1,7 @@
 {
+    "global":{
+        "appName":"German Tagliaferri"
+    },
     "header": {
         "about": "About",
         "skills": "Skills",
