@@ -1,4 +1,6 @@
 Sitemap: http://www.germantagli.com/sitemap.xml
+google-site-verification=sNbdxa33K-kDOe71w55KB2r6qegNXThEN3H_6LG73Rs
+
 User-agent: *
 Allow: /#about
 Allow: /#skills
