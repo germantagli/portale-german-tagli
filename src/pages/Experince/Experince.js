@@ -63,15 +63,15 @@ const Experince = () => {
                         <h2 className="titleEducation mt-3 text-end">{tranlastion("experience.workExperience")}</h2>
                         <p className="descriptionEducation text-end">
 
-                            <div>2022-{new Date().getFullYear()}</div>
+                            {/* <div>2022-{new Date().getFullYear()}</div>
                             <div>
                                 <a target="_blank" href="https://www.linkedin.com/company/ags-it/">
                                     {tranlastion("experience.ags")}
                                 </a>
                             </div>
-                            <div className="mb-3 mb-lg-5">{tranlastion("experience.seniorDeveloper")}</div>
+                            <div className="mb-3 mb-lg-5">{tranlastion("experience.seniorDeveloper")}</div> */}
 
-                            <div>2019-2022</div>
+                            <div>2019-{new Date().getFullYear()}</div>
                             <div>
                                 <a target="_blank" href="https://www.linkedin.com/company/dstexperienceagency/">
                                     {tranlastion("experience.dst")}
