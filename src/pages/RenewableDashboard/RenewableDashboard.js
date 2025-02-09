@@ -1,35 +1,15 @@
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import "./RenewableDashboard.scss";
-import PropTypes from "prop-types";
-import { useTranslation } from "react-i18next";
-
 import React, { useEffect, useState } from "react";
-import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from "chart.js";
-import { Bar } from "react-chartjs-2";
+import { Container, Row, Col, Card, Table, Nav, Tab } from "react-bootstrap";
+import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, RadialLinearScale, PointElement, LineElement, RadarController, Tooltip, Legend } from "chart.js";
+import { Bar, Radar } from "react-chartjs-2";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 // Registrar los componentes de Chart.js
-ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
+ChartJS.register(BarElement, CategoryScale, LinearScale, RadialLinearScale, PointElement, LineElement, RadarController, Tooltip, Legend);
 
-/**
- * @function RenewableDashboard RenewableDashboard components
- * @returns {JSX.Element}
-*/
 const RenewableDashboard = () => {
-    const [tranlastion] = useTranslation("global");
     const [chartData, setChartData] = useState(null);
-    const [center] = useState([43.6532, -79.3832]); // Centro inicial del mapa
-
-    const MapUpdater = ({ center }) => {
-        const map = useMap();
-        useEffect(() => {
-          map.setView(center, map.getZoom());
-        }, [center, map]);
-      
-        return null;
-      };
 
     const buildings = [
         { id: 1, name: "Edificio A", size: 5000, floors: 10, energyConsumption: 300, energyType: "Electricidad", solarPotential: 80, windSpeed: 5, lat: 43.6532, lng: -79.3832 },
@@ -51,48 +31,122 @@ const RenewableDashboard = () => {
         });
     }, []);
 
-
     return (
-        <div className="RenewableDashboard">
-            <Container>
-                <h1>esta es una pagina de prueba </h1>
-                {/* Gráfico */}
-                <div className="chart-container">
-                    {chartData ? (
-                        <Bar data={chartData} options={{ responsive: true, scales: { y: { beginAtZero: true } } }} />
-                    ) : (
-                        <p>Cargando gráfico...</p>
-                    )}
-                </div>
-
-
-                {/* Mapa */}
-                <div className="map-container" style={{ height: "400px", width: "100%" }}>
-                    <MapContainer center={center} zoom={12} style={{ height: "100%", width: "100%" }}>
-                        <MapUpdater center={center} />
-                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="© OpenStreetMap contributors" />
-                        {buildings.map((building) => (
-                            <Marker key={building.id} position={[building.lat, building.lng]}>
-                                <Popup>
-                                    <b>{building.name}</b>
-                                    <br /> Tamaño: {building.size}m²
-                                    <br /> Pisos: {building.floors}
-                                    <br /> Consumo: {building.energyConsumption} kWh
-                                    <br /> Tipo de Energía: {building.energyType}
-                                    <br /> Potencial Solar: {building.solarPotential}%
-                                    <br /> Velocidad del Viento: {building.windSpeed} m/s
-                                </Popup>
-                            </Marker>
-                        ))}
-                    </MapContainer>
-                </div>
-            </Container>
-        </div>
-    )
+        <Container fluid>
+            <h1 className="text-center my-4">Dashboard de Energía Renovable</h1>
+            
+            <Tab.Container defaultActiveKey="kpi">
+                <Nav variant="tabs" className="mb-3">
+                    <Nav.Item>
+                        <Nav.Link eventKey="kpi">KPIs</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="barchart">Gráfico de Barras</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="radarchart">Gráfico de Radar</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="table">Tabla de Datos</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="map">Mapa</Nav.Link>
+                    </Nav.Item>
+                </Nav>
+                
+                <Tab.Content>
+                    <Tab.Pane eventKey="kpi">
+                        <Row className="mb-4">
+                            {buildings.map(building => (
+                                <Col key={building.id} md={6} lg={4}>
+                                    <Card className="p-3">
+                                        <Card.Body>
+                                            <Card.Title>{building.name}</Card.Title>
+                                            <Card.Text>
+                                                Tamaño: {building.size} m²<br/>
+                                                Pisos: {building.floors}<br/>
+                                                Consumo: {building.energyConsumption} kWh<br/>
+                                                Potencial Solar: {building.solarPotential}%
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            ))}
+                        </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="barchart">
+                        <Row className="mb-4">
+                            <Col>
+                                {chartData && <Bar data={chartData} options={{ responsive: true, scales: { y: { beginAtZero: true } } }} />}
+                            </Col>
+                        </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="radarchart">
+                        <Row className="mb-4">
+                            <Col>
+                                <Radar data={{
+                                    labels: ["Consumo Energético", "Potencial Solar"],
+                                    datasets: buildings.map(b => ({
+                                        label: b.name,
+                                        data: [b.energyConsumption, b.solarPotential],
+                                        backgroundColor: "rgba(255, 99, 132, 0.2)"
+                                    }))
+                                }} options={{ responsive: true }} />
+                            </Col>
+                        </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="table">
+                        <Row className="mb-4">
+                            <Col>
+                                <Table striped bordered hover>
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Tamaño (m²)</th>
+                                            <th>Pisos</th>
+                                            <th>Consumo (kWh)</th>
+                                            <th>Potencial Solar (%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {buildings.map(b => (
+                                            <tr key={b.id}>
+                                                <td>{b.name}</td>
+                                                <td>{b.size}</td>
+                                                <td>{b.floors}</td>
+                                                <td>{b.energyConsumption}</td>
+                                                <td>{b.solarPotential}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </Table>
+                            </Col>
+                        </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="map">
+                        <Row>
+                            <Col>
+                                <MapContainer center={[43.6532, -79.3832]} zoom={12} style={{ height: "400px", width: "100%" }}>
+                                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="© OpenStreetMap contributors" />
+                                    {buildings.map(building => (
+                                        <Marker key={building.id} position={[building.lat, building.lng]}>
+                                            <Popup>
+                                                <b>{building.name}</b><br/>
+                                                Tamaño: {building.size}m²<br/>
+                                                Pisos: {building.floors}<br/>
+                                                Consumo: {building.energyConsumption} kWh<br/>
+                                                Potencial Solar: {building.solarPotential}%
+                                            </Popup>
+                                        </Marker>
+                                    ))}
+                                </MapContainer>
+                            </Col>
+                        </Row>
+                    </Tab.Pane>
+                </Tab.Content>
+            </Tab.Container>
+        </Container>
+    );
 };
-
-RenewableDashboard.propTypes = {};
-
-RenewableDashboard.defaultProps = {};
 
 export default RenewableDashboard;
