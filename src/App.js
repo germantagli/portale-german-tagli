@@ -5,55 +5,48 @@ import TornaSuBtn from "./components/TornaSuBtn/TornaSuBtn";
 import AppContextProvider from "./contexts/appContext";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
-import global_es from "./translations/es/global.json"
-import global_en from "./translations/en/global.json"
-import global_it from "./translations/it/global.json"
+import global_es from "./translations/es/global.json";
+import global_en from "./translations/en/global.json";
+import global_it from "./translations/it/global.json";
 import About from "./pages/About/About";
-import Skills from "./pages/Skills/Skills";
-import Experince from "./pages/Experince/Experince";
-import Portafolio from "./pages/Portafolio/Portafolio";
-import Contacts from "./pages/Contacts/Contacts";
-import ProgramsSkills from "./pages/ProgramsSkills/ProgramsSkills";
-import Languages from "./pages/Languages/Languages";
-
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import HomeComponent from "./components/HomeComponent/HomeComponent";
+import RenewableDashboard from "./pages/RenewableDashboard/RenewableDashboard";
 
 i18next.init({
-  interpolation: { scape: false },
+  interpolation: { escape: false },
   lng: "en",
   resources: {
-    es: {
-      global: global_es
-    },
-    en: {
-      global: global_en
-    },
-    it: {
-      global: global_it
-    },
+    es: { global: global_es },
+    en: { global: global_en },
+    it: { global: global_it },
   }
-})
+});
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <I18nextProvider i18n={i18next}>
         <AppContextProvider>
-          <HeaderComponent></HeaderComponent>
-          <div>
-            <section id="about" style={{ minHeight: "300px" }}><About></About></section>
-            <section id="skills" style={{ minHeight: "300px"}}><Skills></Skills></section>
-            <section id="programSkills" style={{ minHeight: "300px" }}><ProgramsSkills></ProgramsSkills></section>
-            <section id="languages" style={{ minHeight: "300px" }}><Languages></Languages></section>
-            <section id="experience" style={{ minHeight: "300px"}}><Experince></Experince></section>
-            <section id="portfolio"><Portafolio></Portafolio></section>
-            <section id="contact" style={{ minHeight: "300px" }}><Contacts></Contacts></section>
-          </div>
-          <FooterComponent></FooterComponent>
-          <TornaSuBtn></TornaSuBtn>
+          <Routes>
+            {/* Rutas con Header y Footer */}
+            <Route path="/" element={
+              <>
+                <HeaderComponent />
+                <HomeComponent />
+                <FooterComponent />
+                <TornaSuBtn />
+              </>
+            } />
+            
+            {/* Ruta sin Header ni Footer */}
+            <Route path="/demo-renewable-dashboard" element={<RenewableDashboard />} />
+          </Routes>
         </AppContextProvider>
       </I18nextProvider>
-    </div>
+    </Router>
   );
 }
+
 
 export default App;
